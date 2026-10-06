@@ -43,6 +43,10 @@ Stop it with `pkill lava`. Run one instance at a time.
 lava uses the colors of [pywal](https://github.com/dylanaraps/pywal) when `~/.cache/wal/colors.json` exists,
 and a built-in palette otherwise. After changing the wallpaper, recolor it live with `pkill -USR2 lava`.
 
-## License
+## Preview
 
-MIT
+<img width="3440" height="1440" alt="image" src="https://github.com/user-attachments/assets/3414dae3-eb61-4014-94b6-21b1a9b7209e" />
+
+<img width="1631" height="997" alt="image" src="https://github.com/user-attachments/assets/f5911a58-6af4-43fc-b6b7-2af0fea1b7cb" />
+
+https://github.com/user-attachments/assets/4cd0ddc6-d330-4c36-92e3-e30ca0b26ec9
