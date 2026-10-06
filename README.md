@@ -1,4 +1,7 @@
-# LAVA
+# 🔥 LAVA
+
+<img width="2145" height="1230" alt="g145" src="https://github.com/user-attachments/assets/0af584bc-c00e-4f6d-9777-680d35644359" />
+
 
 **L**ayer **A**udio **V**isu**A**lizer — an audio visualizer drawn on your Wayland desktop:
 above the wallpaper, below windows, and click-through.
