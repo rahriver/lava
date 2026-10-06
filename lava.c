@@ -72,7 +72,7 @@ static void load_colors(void)
 	char path[512], buf[8192] = { 0 };
 	snprintf(path, sizeof path, "%s/.cache/wal/colors.json", getenv("HOME"));
 	FILE *f = fopen(path, "r");
-	if (f) { fread(buf, 1, sizeof buf - 1, f); fclose(f); }
+	if (f) { buf[fread(buf, 1, sizeof buf - 1, f)] = 0; fclose(f); }
 	for (int i = 0; i < 5; i++) {
 		unsigned c = fallback[i];
 		char needle[32];

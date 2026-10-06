@@ -1,0 +1,21 @@
+# Builds the checked-out source:  cd packaging && makepkg -si
+pkgname=lava
+pkgver=0.1.1
+pkgrel=1
+pkgdesc="Layer Audio VisuAlizer: GPU audio visualizer drawn on your Wayland desktop"
+arch=('x86_64' 'aarch64')
+url="https://github.com/rahriver/lava"
+license=('MIT')
+depends=('cava' 'wayland' 'libglvnd')
+makedepends=('wayland-protocols')
+
+build() {
+  make -C "$startdir/.."
+}
+
+package() {
+  cd "$startdir/.."
+  make DESTDIR="$pkgdir" PREFIX=/usr install
+  install -Dm644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+  install -Dm644 README.md "$pkgdir/usr/share/doc/$pkgname/README.md"
+}

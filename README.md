@@ -20,6 +20,15 @@ Styles: `bars` · `mountains` · `mirror` · `top` · `circle` · `wave`
 
 ## Install
 
+**Arch Linux** (AUR package coming once AUR registration reopens):
+
+```sh
+git clone https://github.com/rahriver/lava
+cd lava/packaging && makepkg -si
+```
+
+**Other distributions:**
+
 ```sh
 make
 sudo make install            # /usr/local/bin/lava   (or: make install PREFIX=~/.local)
